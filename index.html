@@ -1,13 +1,58 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>MEEC by DL</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	</head>
-    <body>
-        <h1>
-            Hello Thạnh
-        </h1>
-    </body>
+<head>
+    <title>Giới thiệu Công ty</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Công ty ABC</h1>
+        <p>Slogan của công ty</p>
+    </header>
+
+    <section class="about">
+        <h2>Về chúng tôi</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Nulla facilisi. Integer a nibh. Morbi in sem quis dui placerat ornare. 
+            Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. 
+        </p>
+        <a href="tailieu.pdf" download>Tải về tài liệu giới thiệu</a>
+    </section>
+
+    <section class="login">
+        <h2>Đăng nhập</h2>
+        <form>
+            <input type="text" placeholder="Tên đăng nhập">
+            <input type="password" placeholder="Mật khẩu">
+            <button type="submit">Đăng nhập</button>
+        </form>
+    </section>
+    
+    <section class="register">
+        <h2>Đăng ký</h2>
+        <form>
+            <input type="text" placeholder="Tên đăng nhập">
+            <input type="password" placeholder="Mật khẩu">
+            <button type="submit">Đăng ký</button>
+        </form>
+    </section>
+    <p id="datetime"></p>
+
+  <script>
+    function showDateTime() {
+      const now = new Date();
+      const options = { year: 'numeric', month: 'long', day: 'numeric'};
+      const formattedDateTime   
+ = now.toLocaleString('vi-VN', options); // Định dạng theo tiếng Việt
+      document.getElementById("datetime").textContent = formattedDateTime;
+    }
+
+    showDateTime(); // Gọi hàm ngay khi trang được load
+  </script>
+    <footer>
+        <p>&copy; Công ty ABC 2023</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>
