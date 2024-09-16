@@ -3723,6 +3723,7 @@ input, select, textarea {
 
 				#nav ul.links li.active {
 					background-color: #ffffff;
+					max-height: 65px;
 				}
 
 					#nav ul.links li.active a {
@@ -3755,6 +3756,10 @@ input, select, textarea {
 		#nav .active:hover .dropdown-menu{
 			display: block;
 			background-color: #f9f9f9;
+		}
+		#nav .quyche:hover .dropdown-menu{
+			display: block;
+			background-color: #bb5c5c;
 		}
 		
 		@media screen and (max-width: 980px) {
