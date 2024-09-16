@@ -3616,7 +3616,7 @@ input, select, textarea {
 		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
 		background: rgba(255, 255, 255, 0.175);
-		height: 4rem;
+		/* height: 4rem; */
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
 		overflow: hidden;
@@ -3745,6 +3745,18 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
+		#nav ul.dropdown-menu{
+			display: none; /* Ẩn menu mặc định */
+			/* position: absolute; */
+			padding: 10px;
+			margin-bottom: 0;
+			background-color: #f9f9f9;
+		}
+		#nav .active:hover .dropdown-menu{
+			display: block;
+			background-color: #f9f9f9;
+		}
+		
 		@media screen and (max-width: 980px) {
 
 			#nav {
@@ -4112,7 +4124,7 @@ input, select, textarea {
 
 		#footer .formerize-placeholder {
 			color: #b3b7bb !important;
-		}
+		}s
 
 		#footer ul.divided li {
 			border-top-color: #e2e2e2;
