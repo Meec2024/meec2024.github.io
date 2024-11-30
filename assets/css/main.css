@@ -3619,12 +3619,13 @@ input, select, textarea {
 		/* height: 4rem; */
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
-		overflow: hidden;
+		/* TODO */
+		/* overflow: hidden; */
 		padding: 0 2rem 0 0;
 		position: relative;
 		width: calc(100% - 4rem);
 		max-width: 72rem;
-		z-index: 2;
+		z-index: 3;
 	}
 
 		#nav ul.divided li {
@@ -3746,20 +3747,25 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
-		#nav ul.dropdown-menu{
-			display: none; /* Ẩn menu mặc định */
-			/* position: absolute; */
-			padding: 10px;
+		#nav .dropdown-menu-inner{
+			position: absolute; 
 			margin-bottom: 0;
-			background-color: #f9f9f9;
-		}
-		#nav .active:hover .dropdown-menu{
-			display: block;
-			background-color: #f9f9f9;
-		}
-		#nav .quyche:hover .dropdown-menu{
-			display: block;
 			background-color: #bb5c5c;
+			max-height: 0;
+			transition: all .5s ease;
+		}
+		#nav ul.dropdown-menu {
+			padding: 10px;
+		}
+		#nav .active:hover .dropdown-menu-inner{
+			max-height: 500px;
+			/* display: block;
+			background-color: #f9f9f9; */
+		}
+		#nav .quyche:hover .dropdown-menu-inner{
+			max-height: 500px;
+			/* display: block;
+			background-color: #bb5c5c; */
 		}
 		
 		@media screen and (max-width: 980px) {
