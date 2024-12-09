@@ -3754,7 +3754,6 @@ input, select, textarea {
 			background-color: #bb5c5c;
 			max-height: 0;
 			transition: all .5s ease;
-<<<<<<< HEAD
 			display: none;
 		}
 		#nav .quyche{
@@ -3792,7 +3791,6 @@ input, select, textarea {
 		#dropdownHCNS .Congtacnganhan:hover .dropdown-menu-inner{
 			max-height: 500px;
 			display: block;
-=======
 		}
 		#nav ul.dropdown-menu {
 			padding: 10px;
@@ -3806,7 +3804,6 @@ input, select, textarea {
 			max-height: 500px;
 			/* display: block;
 			background-color: #bb5c5c; */
->>>>>>> e6e75a151d947916d9dad9f0ec474482ef8ea1a7
 		}
 		
 		@media screen and (max-width: 980px) {
